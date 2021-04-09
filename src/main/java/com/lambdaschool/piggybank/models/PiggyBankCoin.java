@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "coins")
-public class PiggyBankCoins {
+public class PiggyBankCoin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
@@ -15,10 +15,10 @@ public class PiggyBankCoins {
     private double value;
     private int quantity;
 
-    public PiggyBankCoins() {
+    public PiggyBankCoin() {
     }
 
-    public PiggyBankCoins(long coinid, String name, String nameplural, double value, int quantity) {
+    public PiggyBankCoin(long coinid, String name, String nameplural, double value, int quantity) {
         this.coinid = coinid;
         this.name = name;
         this.nameplural = nameplural;
